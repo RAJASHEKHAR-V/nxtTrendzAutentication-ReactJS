@@ -1,0 +1,96 @@
+.bg-container {
+  background-color: #ffffff;
+  min-height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fashion-card {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fashion-content-card {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.cloth-heading {
+  font-family: 'Roboto';
+  color: #1e293b;
+  font-weight: 700;
+  text-align: center;
+}
+
+.trend-image {
+  width: 30%;
+}
+
+.clothe-para {
+  font-family: 'Roboto';
+  color: #475569;
+  font-weight: 400;
+}
+
+.shop-now-card {
+  min-height: 28px;
+  min-width: 80px;
+  max-height: 30px;
+  max-width: 110px;
+  background-color: #0b69ff;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Roboto';
+  color: #e2e8f0;
+  font-weight: 400;
+}
+
+@media (max-width: 767px) {
+  .fashion-card {
+    width: 90%;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .fashion-content-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .cloth-heading {
+    font-size: 35px;
+  }
+
+  .trend-image {
+    width: 50%;
+  }
+
+  .clothe-para {
+    font-size: 14px;
+  }
+
+  .shop-now-card {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  .cloth-heading {
+    font-size: 45px;
+  }
+  .clothe-para {
+    font-size: 16px;
+  }
+  .shop-now-card {
+    font-size: 15px;
+  }
+}
