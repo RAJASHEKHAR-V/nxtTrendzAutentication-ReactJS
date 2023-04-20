@@ -35,10 +35,10 @@ class Home extends Component {
             <h1 className="cloth-heading">Clothes That Get YOU Noticed</h1>
             {innerWidth <= 767 ? this.getTrendImage() : ''}
             <p className="clothe-para">
-              Fashion is the part of the daily air and it does not quite help
-              that it changes all the time. Clothes always been a maker of the
-              era and we are in a revolution. Your fashion makes you been seen
-              heard that we are. So, celebrate the seasons new and exciting
+              Fashion is part of the daily air and it does not quite help that
+              it changes all the time. Clothes always been a maker of the era
+              and we are in a revolution. Your fashion makes you been seen heard
+              that way you are. So, celebrate the seasons new and exciting
               fashion in your own way.
             </p>
             <div>

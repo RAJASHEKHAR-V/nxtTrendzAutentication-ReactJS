@@ -26,7 +26,7 @@ const Header = props => {
         )}
       </div>
       <div className="nav-card">
-        <div>
+        <li>
           <button className="home-button" type="submit">
             {innerWidth <= 767 ? (
               <img
@@ -38,8 +38,8 @@ const Header = props => {
               'Home'
             )}
           </button>
-        </div>
-        <div>
+        </li>
+        <li>
           <button className="product-button" type="submit">
             {innerWidth <= 767 ? (
               <img
@@ -51,8 +51,8 @@ const Header = props => {
               'Products'
             )}
           </button>
-        </div>
-        <div>
+        </li>
+        <li>
           <button className="cart-button" type="submit">
             {innerWidth <= 767 ? (
               <img
@@ -64,7 +64,7 @@ const Header = props => {
               'Cart'
             )}
           </button>
-        </div>
+        </li>
         {innerWidth >= 768 ? (
           <div>
             <button className="logout-button" type="submit">

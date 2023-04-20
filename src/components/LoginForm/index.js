@@ -22,6 +22,7 @@ class LoginForm extends Component {
   onSuccessfulSubmission = () => {
     const {history} = this.props
     history.replace('/')
+    this.setState({errorMessage: ''})
   }
 
   onFailure = data => {
@@ -35,16 +36,19 @@ class LoginForm extends Component {
     const url = 'https://apis.ccbp.in/login'
     const userDetails = {userName, userPassword}
     const options = {
-      mode: 'no-cors',
-      method: 'post',
-      header: {'Content-Type': 'application/json'},
+      //   mode: 'no-cors',
+      method: 'POST',
+      //   header: {'Content-Type': 'application/json'},
       body: JSON.stringify(userDetails),
     }
     const response = await fetch(url, options)
-    // const data = await response.json()
+    const data = await response.json()
     console.log(response)
+
     if (response.ok === true) {
       this.onSuccessfulSubmission()
+    } else {
+      this.onFailure(data)
     }
     this.setState({userName: '', userPassword: ''})
   }
