@@ -25,7 +25,7 @@ const Header = props => {
           ''
         )}
       </div>
-      <div className="nav-card">
+      <ul className="nav-card">
         <li>
           <button className="home-button" type="submit">
             {innerWidth <= 767 ? (
@@ -74,7 +74,7 @@ const Header = props => {
         ) : (
           ''
         )}
-      </div>
+      </ul>
     </div>
   )
 }

@@ -34,11 +34,9 @@ class LoginForm extends Component {
     const {userName, userPassword} = this.state
 
     const url = 'https://apis.ccbp.in/login'
-    const userDetails = {userName, userPassword}
+    const userDetails = {username: userName, password: userPassword}
     const options = {
-      //   mode: 'no-cors',
       method: 'POST',
-      //   header: {'Content-Type': 'application/json'},
       body: JSON.stringify(userDetails),
     }
     const response = await fetch(url, options)

@@ -94,6 +94,7 @@
 }
 
 .error-msg {
+  width: 60%;
   font-family: 'Roboto';
   color: #ff0b37;
   font-weight: 500;
@@ -146,5 +147,34 @@
   }
   .login-button {
     font-size: 12px;
+  }
+  .error-msg {
+    width: 90%;
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 768px) {
+  .user-label {
+    font-size: 16px;
+  }
+
+  .user-input {
+    font-size: 15px;
+  }
+
+  .password-label {
+    font-size: 15px;
+  }
+
+  .password-input {
+    font-size: 15px;
+  }
+
+  .login-button {
+    font-size: 14px;
+  }
+  .error-msg {
+    font-size: 14px;
   }
 }
