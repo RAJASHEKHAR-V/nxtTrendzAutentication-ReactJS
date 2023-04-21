@@ -22,7 +22,6 @@ class LoginForm extends Component {
   onSuccessfulSubmission = () => {
     const {history} = this.props
     history.replace('/')
-    .setState({userName: '', userPassword: '', errorMessage: ''})
   }
 
   onFailure = data => {
@@ -45,6 +44,7 @@ class LoginForm extends Component {
 
     if (response.ok === true) {
       this.onSuccessfulSubmission()
+      this.setState({userName: '', userPassword: '', errorMessage: ''})
     } else {
       this.onFailure(data)
     }
