@@ -22,7 +22,7 @@ class LoginForm extends Component {
   onSuccessfulSubmission = () => {
     const {history} = this.props
     history.replace('/')
-    this.setState({errorMessage: ''})
+    .setState({userName: '', userPassword: '', errorMessage: ''})
   }
 
   onFailure = data => {
@@ -48,7 +48,6 @@ class LoginForm extends Component {
     } else {
       this.onFailure(data)
     }
-    this.setState({userName: '', userPassword: ''})
   }
 
   onChangeUserName = event => {
